@@ -5,6 +5,7 @@ import { PersonalizeCollectionEnum } from "./PersonalizeCollectionEnum";
 import { AuthCollectionEnum } from "./AuthCollectionEnum";
 import * as Keys from "./Keys";
 import { LunaticCollectionEnum } from "./LunaticCollectionEnum";
+import { DistributionAppsData } from "./DistributionData";
 
 export {
   FirebaseConfig,
@@ -14,4 +15,5 @@ export {
   client,
   Keys,
   LunaticCollectionEnum,
+  DistributionAppsData,
 };

@@ -7,6 +7,8 @@ This service provides the following api:
 
 > `/getSupportInfo`
 
+> `/getAppPersonalize`
+
 #### R3D3-Admin
 > `/setLogin`
 

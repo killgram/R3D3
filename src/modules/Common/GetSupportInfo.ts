@@ -8,7 +8,6 @@ import { CommonService } from "../../services";
  */
 const getSupportInfo = async (req: Request, res: Response) => {
   const data = await CommonService.getSupportInfoService();
-
   res.status(200).send({
     data: data,
     success: true,

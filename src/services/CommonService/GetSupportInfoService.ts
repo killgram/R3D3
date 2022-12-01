@@ -1,15 +1,11 @@
 import { client, SupportCollectionEnum } from "../../configurations";
-import { collection, getDocs } from "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
 
 const getSupportInfoService = async () => {
-  let data;
-  const querySnapshot = await getDocs(
-    collection(client, SupportCollectionEnum.COLLECTION)
+  const querySnapshot = await getDoc(
+    doc(client, SupportCollectionEnum.COLLECTION, SupportCollectionEnum.TABLE)
   );
-  querySnapshot.forEach((doc: any) => {
-    data = doc.data();
-  });
-  return data;
+  return querySnapshot.data();
 };
 
 export { getSupportInfoService };

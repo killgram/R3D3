@@ -23,6 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // common
 app.get("/status", Common.getWorkStatus);
 app.get("/getSupportInfo", Common.getSupportInfo);
+app.get("/getAppPersonalize", Common.getAppPersonalize);
 
 // r3d3-admin
 app.get("/signIn", verificationAuthGet, R3D3.signIn);
