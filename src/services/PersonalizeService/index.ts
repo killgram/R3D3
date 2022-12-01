@@ -3,6 +3,7 @@ import { addPersonalizeService } from "./AddPersonalizeService";
 import { deletePersonalizeService } from "./DeletePersonalizeService";
 import { personalizeExistService } from "./PersonalizeExistService";
 import { changePersonalizeService } from "./ChangePersonalizeService";
+import { getSkillsService } from "./GetSkillsService";
 
 export {
   getPersonalizeService,
@@ -10,4 +11,5 @@ export {
   deletePersonalizeService,
   personalizeExistService,
   changePersonalizeService,
+  getSkillsService,
 };

@@ -43,3 +43,6 @@ This service provides the following api:
 > `/deletePersonalize`
 
 > `/changePersonalize`
+
+> `/getSkills`
+
