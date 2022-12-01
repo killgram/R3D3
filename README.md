@@ -41,3 +41,5 @@ This service provides the following api:
 > `/addPersonalize`
 
 > `/deletePersonalize`
+
+> `/changePersonalize`
