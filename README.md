@@ -6,3 +6,5 @@ This service provides the following api:
 > `/status`
 
 > `/getSupportInfo`
+
+> `/setLogin`
