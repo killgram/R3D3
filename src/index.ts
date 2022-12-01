@@ -6,7 +6,8 @@ const PORT = process.env.PORT || 9987;
 
 import bodyParser from "body-parser";
 
-import { getWorkStatus, getSupportInfo, setLogin } from "./modules";
+import { getWorkStatus, getSupportInfo, setLogin, signIn } from "./modules";
+import { verificationAuthGet } from "./middleware";
 
 // configuration
 app.use(cors());
@@ -16,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // GET
 app.get("/status", getWorkStatus);
 app.get("/getSupportInfo", getSupportInfo);
+app.get("/signIn", verificationAuthGet, signIn);
 
 // POST
 app.post("/setLogin", setLogin);

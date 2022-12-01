@@ -8,3 +8,5 @@ This service provides the following api:
 > `/getSupportInfo`
 
 > `/setLogin`
+
+> `/signIn`
