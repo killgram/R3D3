@@ -27,3 +27,7 @@ This service provides the following api:
 #### Support
 
 > `/getDataSupport`
+
+> `/addDataSupport`
+
+> `/deleteDataSupport`

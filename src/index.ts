@@ -41,6 +41,8 @@ app.post("/deleteLinkLunatic", authenticateJWT, Lunatic.deleteLink);
 
 // support
 app.get("/getDataSupport", authenticateJWT, Support.getSupport);
+app.post("/addDataSupport", authenticateJWT, Support.addSupport);
+app.post("/deleteDataSupport", authenticateJWT, Support.deleteSupport);
 
 // listener
 app.listen(PORT, (): void => {

@@ -1,3 +1,11 @@
 import { getSupportService } from "./GetSupportService";
+import { addSupportService } from "./AddSupportService";
+import { supportExistService } from "./SupportExistService";
+import { deleteSupportService } from "./DeleteSupportService";
 
-export { getSupportService };
+export {
+  getSupportService,
+  addSupportService,
+  supportExistService,
+  deleteSupportService,
+};
