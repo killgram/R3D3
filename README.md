@@ -36,4 +36,6 @@ This service provides the following api:
 
 > `/getPersonalize`
 
+> `/addPersonalize`
 
+> `/deletePersonalize`

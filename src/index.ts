@@ -47,6 +47,8 @@ app.post("/deleteDataSupport", authenticateJWT, Support.deleteSupport);
 
 // personalize
 app.get("/getPersonalize", authenticateJWT, Personalize.getPersonalize);
+app.post("/addPersonalize", authenticateJWT, Personalize.addPersonalize);
+app.post("/deletePersonalize", authenticateJWT, Personalize.deletePersonalize);
 
 // listener
 app.listen(PORT, (): void => {
