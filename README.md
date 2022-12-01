@@ -46,3 +46,6 @@ This service provides the following api:
 
 > `/getSkills`
 
+> `/addSkills`
+
+
