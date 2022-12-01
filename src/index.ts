@@ -13,7 +13,7 @@ import {
   signIn,
   getLogin,
 } from "./modules";
-import { verificationAuthGet } from "./middleware";
+import { verificationAuthGet, verificationMobileKey } from "./middleware";
 
 // configuration
 app.use(cors());
@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get("/status", getWorkStatus);
 app.get("/getSupportInfo", getSupportInfo);
 app.get("/signIn", verificationAuthGet, signIn);
-app.get("/getLogin", getLogin);
+app.get("/getLogin", verificationMobileKey, getLogin);
 
 // POST
 app.post("/setLogin", setLogin);

@@ -1,3 +1,4 @@
 import { verificationAuthGet } from "./VerificationAuthGet";
+import { verificationMobileKey } from "./VerificationMobileKey";
 
-export { verificationAuthGet };
+export { verificationAuthGet, verificationMobileKey };
