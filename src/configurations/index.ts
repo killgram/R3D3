@@ -1,3 +1,4 @@
+import { client } from "./dbClient";
 import { FirebaseConfig } from "./dbConfig";
 import { SupportCollectionEnum } from "./SupportCollectionEnum";
 import { PersonalizeCollectionEnum } from "./PersonalizeCollectionEnum";
@@ -8,4 +9,5 @@ export {
   SupportCollectionEnum,
   PersonalizeCollectionEnum,
   AuthCollectionEnum,
+  client,
 };

@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 9987;
 
 import bodyParser from "body-parser";
 
-import { getWorkStatus, getSupportInfo } from "./modules";
+import { getWorkStatus, getSupportInfo, setLogin } from "./modules";
 
 // configuration
 app.use(cors());
@@ -18,6 +18,7 @@ app.get("/status", getWorkStatus);
 app.get("/getSupportInfo", getSupportInfo);
 
 // POST
+app.post("/setLogin", setLogin);
 
 // listener
 app.listen(PORT, (): void => {
