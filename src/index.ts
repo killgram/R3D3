@@ -1,10 +1,9 @@
 import express, { Application } from "express";
 import cors from "cors";
+import bodyParser from "body-parser";
 
 const app: Application = express();
 const PORT = process.env.PORT || 9987;
-
-import bodyParser from "body-parser";
 
 import { Common, R3D3, Lunatic } from "./modules";
 import {
@@ -37,6 +36,8 @@ app.post(
 
 // lunatic
 app.get("/getLinksLunatic", authenticateJWT, Lunatic.getLinks);
+app.post("/addLink", authenticateJWT, Lunatic.addLink);
+app.post("/deleteLink", authenticateJWT, Lunatic.deleteLink);
 
 // listener
 app.listen(PORT, (): void => {

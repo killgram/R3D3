@@ -19,3 +19,7 @@ This service provides the following api:
 #### Lunatic
 
 > `/getLinksLunatic`
+
+> `/addLink`
+
+> `/deleteLink`
