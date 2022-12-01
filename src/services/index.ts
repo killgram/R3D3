@@ -3,6 +3,7 @@ import { setLoginService } from "./SetLoginService";
 import { authExistService } from "./AuthExistService";
 import { clearAuthService } from "./ClearAuthService";
 import { getLoginService } from "./GetLoginService";
+import { setPasswordService } from "./SetPasswordService";
 
 export {
   getSupportInfoService,
@@ -10,4 +11,5 @@ export {
   authExistService,
   clearAuthService,
   getLoginService,
+  setPasswordService,
 };

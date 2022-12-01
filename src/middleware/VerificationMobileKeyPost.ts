@@ -1,12 +1,12 @@
 import { Request, Response, NextFunction } from "express";
 import { Keys } from "../configurations";
 
-const verificationMobileKey = (
+const verificationMobileKeyPost = (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
-  const { key } = req.query;
+  const { key } = req.body;
   if (!key) {
     return res.status(200).send({
       title: "query param is missing",
@@ -22,4 +22,4 @@ const verificationMobileKey = (
   }
 };
 
-export { verificationMobileKey };
+export { verificationMobileKeyPost };

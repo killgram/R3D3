@@ -12,8 +12,14 @@ import {
   setLogin,
   signIn,
   getLogin,
+  setPassword,
 } from "./modules";
-import { verificationAuthGet, verificationMobileKey } from "./middleware";
+import {
+  verificationAuthGet,
+  verificationMobileKeyGet,
+  verificationMobileKeyPost,
+  verificationMobileParams,
+} from "./middleware";
 
 // configuration
 app.use(cors());
@@ -24,10 +30,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get("/status", getWorkStatus);
 app.get("/getSupportInfo", getSupportInfo);
 app.get("/signIn", verificationAuthGet, signIn);
-app.get("/getLogin", verificationMobileKey, getLogin);
+app.get("/getLogin", verificationMobileKeyGet, getLogin);
 
 // POST
 app.post("/setLogin", setLogin);
+app.post(
+  "/setPassword",
+  verificationMobileKeyPost,
+  verificationMobileParams,
+  setPassword
+);
 
 // listener
 app.listen(PORT, (): void => {

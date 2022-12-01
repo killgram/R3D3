@@ -13,3 +13,5 @@ This service provides the following api:
 
 #### POST
 > `/setLogin`
+
+> `/setPassword`
