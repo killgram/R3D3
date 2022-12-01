@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { getSupportInfoService } from "../services";
+import { CommonService } from "../../services";
 
 /**
  * @description getting support info api
@@ -7,7 +7,7 @@ import { getSupportInfoService } from "../services";
  * @param {Response} res
  */
 const getSupportInfo = async (req: Request, res: Response) => {
-  const data = await getSupportInfoService();
+  const data = await CommonService.getSupportInfoService();
 
   res.status(200).send({
     data: data,

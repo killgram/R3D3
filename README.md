@@ -2,16 +2,20 @@
 
 This service provides the following api:
 
-#### GET
+#### Common
 > `/status`
 
 > `/getSupportInfo`
+
+#### R3D3-Admin
+> `/setLogin`
+
+> `/setPassword`
 
 > `/signIn`
 
 > `/getLogin`
 
-#### POST
-> `/setLogin`
+#### Lunatic
 
-> `/setPassword`
+> `/getLinksLunatic`

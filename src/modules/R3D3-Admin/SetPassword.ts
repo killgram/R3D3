@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { setPasswordService } from "../services";
+import { R3D3Service } from "../../services";
 
 /**
  * @description set password api
@@ -8,7 +8,7 @@ import { setPasswordService } from "../services";
  */
 const setPassword = async (req: Request, res: Response) => {
   const { password } = req.body;
-  await setPasswordService(password);
+  await R3D3Service.setPasswordService(password);
 
   res.status(200).send({
     title: `Set password to "${password}"`,

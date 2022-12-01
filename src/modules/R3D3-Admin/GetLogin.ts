@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { getLoginService } from "../services";
+import { R3D3Service } from "../../services";
 
 /**
  * @description get mobile login api
@@ -7,7 +7,7 @@ import { getLoginService } from "../services";
  * @param {Response} res
  */
 const getLogin = async (req: Request, res: Response) => {
-  const data = await getLoginService();
+  const data = await R3D3Service.getLoginService();
   return res.status(200).send({
     data: data,
     success: true,

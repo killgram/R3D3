@@ -6,19 +6,13 @@ const PORT = process.env.PORT || 9987;
 
 import bodyParser from "body-parser";
 
-import {
-  getWorkStatus,
-  getSupportInfo,
-  setLogin,
-  signIn,
-  getLogin,
-  setPassword,
-} from "./modules";
+import { Common, R3D3, Lunatic } from "./modules";
 import {
   verificationAuthGet,
   verificationMobileKeyGet,
   verificationMobileKeyPost,
   verificationMobileParams,
+  authenticateJWT,
 } from "./middleware";
 
 // configuration
@@ -26,20 +20,23 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// GET
-app.get("/status", getWorkStatus);
-app.get("/getSupportInfo", getSupportInfo);
-app.get("/signIn", verificationAuthGet, signIn);
-app.get("/getLogin", verificationMobileKeyGet, getLogin);
+// common
+app.get("/status", Common.getWorkStatus);
+app.get("/getSupportInfo", Common.getSupportInfo);
 
-// POST
-app.post("/setLogin", setLogin);
+// r3d3-admin
+app.get("/signIn", verificationAuthGet, R3D3.signIn);
+app.get("/getLogin", verificationMobileKeyGet, R3D3.getLogin);
+app.post("/setLogin", R3D3.setLogin);
 app.post(
   "/setPassword",
   verificationMobileKeyPost,
   verificationMobileParams,
-  setPassword
+  R3D3.setPassword
 );
+
+// lunatic
+app.get("/getLinksLunatic", authenticateJWT, Lunatic.getLinks);
 
 // listener
 app.listen(PORT, (): void => {

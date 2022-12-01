@@ -1,15 +1,5 @@
-import { getSupportInfoService } from "./GetSupportInfoService";
-import { setLoginService } from "./SetLoginService";
-import { authExistService } from "./AuthExistService";
-import { clearAuthService } from "./ClearAuthService";
-import { getLoginService } from "./GetLoginService";
-import { setPasswordService } from "./SetPasswordService";
+import * as CommonService from "./CommonService";
+import * as R3D3Service from "./R3D3-AdminService";
+import * as LunaticService from "./LunaticService";
 
-export {
-  getSupportInfoService,
-  setLoginService,
-  authExistService,
-  clearAuthService,
-  getLoginService,
-  setPasswordService,
-};
+export { CommonService, R3D3Service, LunaticService };

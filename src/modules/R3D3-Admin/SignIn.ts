@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { authExistService, clearAuthService } from "../services";
-import { TokenUtils } from "../utils";
+import { R3D3Service } from "../../services";
+import { TokenUtils } from "../../utils";
 
 /**
  * @description sign in api
@@ -9,10 +9,13 @@ import { TokenUtils } from "../utils";
  */
 const signIn = async (req: Request, res: Response) => {
   const { login, password } = req.query;
-  const isExist = await authExistService(String(login), String(password));
+  const isExist = await R3D3Service.authExistService(
+    String(login),
+    String(password)
+  );
   if (isExist) {
     const accessToken = TokenUtils.generateAccessToken(String(login));
-    await clearAuthService();
+    await R3D3Service.clearAuthService();
     return res.status(200).send({
       accessToken: accessToken,
       success: true,

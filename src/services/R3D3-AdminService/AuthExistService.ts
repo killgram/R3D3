@@ -1,5 +1,5 @@
 import { doc, getDoc } from "firebase/firestore";
-import { client, AuthCollectionEnum } from "../configurations";
+import { client, AuthCollectionEnum } from "../../configurations";
 
 const authExistService = async (login: string, password: string) => {
   let isExist = false;

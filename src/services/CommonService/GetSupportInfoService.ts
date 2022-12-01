@@ -1,4 +1,4 @@
-import { client, SupportCollectionEnum } from "../configurations";
+import { client, SupportCollectionEnum } from "../../configurations";
 import { collection, getDocs } from "firebase/firestore";
 
 const getSupportInfoService = async () => {

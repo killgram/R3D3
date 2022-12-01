@@ -1,14 +1,14 @@
-import { client, AuthCollectionEnum } from "../configurations";
+import { client, AuthCollectionEnum } from "../../configurations";
 import { updateDoc, doc } from "firebase/firestore";
 
-const setLoginService = async (login: string) => {
+const setPasswordService = async (password: string) => {
   await updateDoc(
     doc(client, AuthCollectionEnum.COLLECTION, AuthCollectionEnum.TABLE),
     {
-      login: login,
+      password: password,
     }
   );
   return true;
 };
 
-export { setLoginService };
+export { setPasswordService };

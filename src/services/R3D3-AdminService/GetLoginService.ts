@@ -1,4 +1,4 @@
-import { client, AuthCollectionEnum } from "../configurations";
+import { client, AuthCollectionEnum } from "../../configurations";
 import { doc, getDoc } from "firebase/firestore";
 
 const getLoginService = async () => {
