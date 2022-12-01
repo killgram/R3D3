@@ -20,6 +20,10 @@ This service provides the following api:
 
 > `/getLinksLunatic`
 
-> `/addLink`
+> `/addLinkLunatic`
 
-> `/deleteLink`
+> `/deleteLinkLunatic`
+
+#### Support
+
+> `/getDataSupport`
