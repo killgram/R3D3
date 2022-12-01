@@ -31,3 +31,9 @@ This service provides the following api:
 > `/addDataSupport`
 
 > `/deleteDataSupport`
+
+#### Personalize
+
+> `/getPersonalize`
+
+

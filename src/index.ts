@@ -5,7 +5,8 @@ import bodyParser from "body-parser";
 const app: Application = express();
 const PORT = process.env.PORT || 9987;
 
-import { Common, R3D3, Lunatic, Support } from "./modules";
+import { Common, R3D3, Lunatic, Support, Personalize } from "./modules";
+
 import {
   verificationAuthGet,
   verificationMobileKeyGet,
@@ -43,6 +44,9 @@ app.post("/deleteLinkLunatic", authenticateJWT, Lunatic.deleteLink);
 app.get("/getDataSupport", authenticateJWT, Support.getSupport);
 app.post("/addDataSupport", authenticateJWT, Support.addSupport);
 app.post("/deleteDataSupport", authenticateJWT, Support.deleteSupport);
+
+// personalize
+app.get("/getPersonalize", authenticateJWT, Personalize.getPersonalize);
 
 // listener
 app.listen(PORT, (): void => {
