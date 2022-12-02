@@ -1,3 +1,4 @@
 import { getTotalCountService } from "./GetTotalCountService";
+import { getUsersService } from "./GetUsersService";
 
-export { getTotalCountService };
+export { getTotalCountService, getUsersService };

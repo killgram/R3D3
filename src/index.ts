@@ -111,7 +111,7 @@ app.post(
 
 // resume
 app.get("/resume/getTotalCount", authenticateJWT, Resume.getTotalCount);
-// app.get("/getTotalCount", authenticateJWT, Resume.getTotalCount);
+app.get("/resume/getUsers", authenticateJWT, Resume.getUsers);
 
 // listener
 app.listen(PORT, (): void => {

@@ -72,3 +72,5 @@ This service provides the following api:
 
 > `/resume/getTotalCount`
 
+> `/resume/getUsers`
+
