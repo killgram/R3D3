@@ -14,6 +14,12 @@ import {
   AccessesProtonCollectionEnum,
   AccessesRenderCollectionEnum,
 } from "./AccessesCollectionEnum";
+import { dbResumeConfig } from "./dbResumeConfig";
+import { resumeClient } from "./dbResumeClient";
+import {
+  ResumeUsersCollectionEnum,
+  ResumeTotalCountCollectionEnum,
+} from "./ResumeCollectionEnum";
 
 export {
   FirebaseConfig,
@@ -28,4 +34,8 @@ export {
   AccessesRenderCollectionEnum,
   AccessesGithubCollectionEnum,
   AccessesProtonCollectionEnum,
+  dbResumeConfig,
+  resumeClient,
+  ResumeUsersCollectionEnum,
+  ResumeTotalCountCollectionEnum,
 };

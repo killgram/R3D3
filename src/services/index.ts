@@ -4,6 +4,7 @@ import * as LunaticService from "./LunaticService";
 import * as SupportService from "./SupportService";
 import * as PersonalizeService from "./PersonalizeService";
 import * as AccessesService from "./AccessesService";
+import * as ResumeService from "./ResumeService";
 
 export {
   CommonService,
@@ -12,4 +13,5 @@ export {
   SupportService,
   PersonalizeService,
   AccessesService,
+  ResumeService,
 };

@@ -4,5 +4,6 @@ import * as Lunatic from "./Lunatic";
 import * as Support from "./Support";
 import * as Personalize from "./Personalize";
 import * as Accesses from "./Accesses";
+import * as Resume from "./Resume";
 
-export { Common, R3D3, Lunatic, Support, Personalize, Accesses };
+export { Common, R3D3, Lunatic, Support, Personalize, Accesses, Resume };

@@ -12,6 +12,7 @@ import {
   Support,
   Personalize,
   Accesses,
+  Resume,
 } from "./modules";
 
 import {
@@ -71,6 +72,9 @@ app.post("/addRenderAccess", authenticateJWT, Accesses.addRenderAccess);
 app.post("/deleteGithubAccess", authenticateJWT, Accesses.deleteGithubAccess);
 app.post("/deleteProtonAccess", authenticateJWT, Accesses.deleteProtonAccess);
 app.post("/deleteRenderAccess", authenticateJWT, Accesses.deleteRenderAccess);
+
+// resume
+app.get("/getTotalCount", authenticateJWT, Resume.getTotalCount);
 
 // listener
 app.listen(PORT, (): void => {

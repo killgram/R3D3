@@ -67,3 +67,8 @@ This service provides the following api:
 > `/deleteProtonAccess`
 
 > `/deleteRenderAccess`
+
+#### Resume
+
+> `/getTotalCount`
+
