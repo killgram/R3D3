@@ -30,51 +30,88 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // common
 app.get("/status", Common.getWorkStatus);
-app.get("/getSupportInfo", Common.getSupportInfo);
-app.get("/getAppPersonalize", Common.getAppPersonalize);
+app.get("/common/getSupportInfo", Common.getSupportInfo);
+app.get("/common/getAppPersonalize", Common.getAppPersonalize);
 
 // r3d3-admin
-app.get("/signIn", verificationAuthGet, R3D3.signIn);
-app.get("/getLogin", verificationMobileKeyGet, R3D3.getLogin);
-app.post("/setLogin", R3D3.setLogin);
+app.get("/r3d3/signIn", verificationAuthGet, R3D3.signIn);
+app.get("/r3d3/getLogin", verificationMobileKeyGet, R3D3.getLogin);
+app.post("/r3d3/setLogin", R3D3.setLogin);
 app.post(
-  "/setPassword",
+  "/r3d3/setPassword",
   verificationMobileKeyPost,
   verificationMobileParams,
   R3D3.setPassword
 );
 
 // lunatic
-app.get("/getLinksLunatic", authenticateJWT, Lunatic.getLinks);
-app.post("/addLinkLunatic", authenticateJWT, Lunatic.addLink);
-app.post("/deleteLinkLunatic", authenticateJWT, Lunatic.deleteLink);
+app.get("/lunatic/getLinksLunatic", authenticateJWT, Lunatic.getLinks);
+app.post("/lunatic/addLinkLunatic", authenticateJWT, Lunatic.addLink);
+app.post("/lunatic/deleteLinkLunatic", authenticateJWT, Lunatic.deleteLink);
 
 // support
-app.get("/getDataSupport", authenticateJWT, Support.getSupport);
-app.post("/addDataSupport", authenticateJWT, Support.addSupport);
-app.post("/deleteDataSupport", authenticateJWT, Support.deleteSupport);
+app.get("/support/getDataSupport", authenticateJWT, Support.getSupport);
+app.post("/support/addDataSupport", authenticateJWT, Support.addSupport);
+app.post("/support/deleteDataSupport", authenticateJWT, Support.deleteSupport);
 
 // personalize
-app.get("/getPersonalize", authenticateJWT, Personalize.getPersonalize);
-app.post("/addPersonalize", authenticateJWT, Personalize.addPersonalize);
-app.post("/deletePersonalize", authenticateJWT, Personalize.deletePersonalize);
-app.post("/changePersonalize", authenticateJWT, Personalize.changePersonalize);
-app.get("/getSkills", authenticateJWT, Personalize.getSkills);
-app.post("/addSkills", authenticateJWT, Personalize.addSkills);
-app.post("/updateSkills", authenticateJWT, Personalize.updateSkills);
-app.post("/deleteSkills", authenticateJWT, Personalize.deleteSkills);
+app.get(
+  "/personalize/getPersonalize",
+  authenticateJWT,
+  Personalize.getPersonalize
+);
+app.post(
+  "/personalize/addPersonalize",
+  authenticateJWT,
+  Personalize.addPersonalize
+);
+app.post(
+  "/personalize/deletePersonalize",
+  authenticateJWT,
+  Personalize.deletePersonalize
+);
+app.post(
+  "/personalize/changePersonalize",
+  authenticateJWT,
+  Personalize.changePersonalize
+);
+app.get("/personalize/getSkills", authenticateJWT, Personalize.getSkills);
+app.post("/personalize/addSkills", authenticateJWT, Personalize.addSkills);
+app.post(
+  "/personalize/updateSkills",
+  authenticateJWT,
+  Personalize.updateSkills
+);
+app.post(
+  "/personalize/deleteSkills",
+  authenticateJWT,
+  Personalize.deleteSkills
+);
 
 // accesses
-app.get("/getAllAccess", authenticateJWT, Accesses.getAllAccess);
-app.post("/addGithubAccess", authenticateJWT, Accesses.addGithubAccess);
-app.post("/addProtonAccess", authenticateJWT, Accesses.addProtonAccess);
-app.post("/addRenderAccess", authenticateJWT, Accesses.addRenderAccess);
-app.post("/deleteGithubAccess", authenticateJWT, Accesses.deleteGithubAccess);
-app.post("/deleteProtonAccess", authenticateJWT, Accesses.deleteProtonAccess);
-app.post("/deleteRenderAccess", authenticateJWT, Accesses.deleteRenderAccess);
+app.get("/access/getAllAccess", authenticateJWT, Accesses.getAllAccess);
+app.post("/access/addGithubAccess", authenticateJWT, Accesses.addGithubAccess);
+app.post("/access/addProtonAccess", authenticateJWT, Accesses.addProtonAccess);
+app.post("/access/addRenderAccess", authenticateJWT, Accesses.addRenderAccess);
+app.post(
+  "/access/deleteGithubAccess",
+  authenticateJWT,
+  Accesses.deleteGithubAccess
+);
+app.post(
+  "/access/deleteProtonAccess",
+  authenticateJWT,
+  Accesses.deleteProtonAccess
+);
+app.post(
+  "/access/deleteRenderAccess",
+  authenticateJWT,
+  Accesses.deleteRenderAccess
+);
 
 // resume
-app.get("/getTotalCount", authenticateJWT, Resume.getTotalCount);
+app.get("/resume/getTotalCount", authenticateJWT, Resume.getTotalCount);
+// app.get("/getTotalCount", authenticateJWT, Resume.getTotalCount);
 
 // listener
 app.listen(PORT, (): void => {

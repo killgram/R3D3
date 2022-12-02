@@ -5,70 +5,70 @@ This service provides the following api:
 #### Common
 > `/status`
 
-> `/getSupportInfo`
+> `/common/getSupportInfo`
 
-> `/getAppPersonalize`
+> `/common/getAppPersonalize`
 
 #### R3D3-Admin
-> `/setLogin`
+> `/r3d3/setLogin`
 
-> `/setPassword`
+> `/r3d3/setPassword`
 
-> `/signIn`
+> `/r3d3/signIn`
 
-> `/getLogin`
+> `/r3d3/getLogin`
 
 #### Lunatic
 
-> `/getLinksLunatic`
+> `/lunatic/getLinksLunatic`
 
-> `/addLinkLunatic`
+> `/lunatic/addLinkLunatic`
 
-> `/deleteLinkLunatic`
+> `/lunatic/deleteLinkLunatic`
 
 #### Support
 
-> `/getDataSupport`
+> `/support/getDataSupport`
 
-> `/addDataSupport`
+> `/support/addDataSupport`
 
-> `/deleteDataSupport`
+> `/support/deleteDataSupport`
 
 #### Personalize
 
-> `/getPersonalize`
+> `/personalize/getPersonalize`
 
-> `/addPersonalize`
+> `/personalize/addPersonalize`
 
-> `/deletePersonalize`
+> `/personalize/deletePersonalize`
 
-> `/changePersonalize`
+> `/personalize/changePersonalize`
 
-> `/getSkills`
+> `/personalize/getSkills`
 
-> `/addSkills`
+> `/personalize/addSkills`
 
-> `/updateSkills`
+> `/personalize/updateSkills`
 
-> `/deleteSkills`
+> `/personalize/deleteSkills`
 
 #### Accesses
 
-> `/getAllAccess`
+> `/access/getAllAccess`
 
-> `/addGithubAccess`
+> `/access/addGithubAccess`
 
-> `/addProtonAccess`
+> `/access/addProtonAccess`
 
-> `/addRenderAccess`
+> `/access/addRenderAccess`
 
-> `/deleteGithubAccess`
+> `/access/deleteGithubAccess`
 
-> `/deleteProtonAccess`
+> `/access/deleteProtonAccess`
 
-> `/deleteRenderAccess`
+> `/access/deleteRenderAccess`
 
 #### Resume
 
-> `/getTotalCount`
+> `/resume/getTotalCount`
 
