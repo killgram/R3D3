@@ -61,3 +61,9 @@ This service provides the following api:
 > `/addProtonAccess`
 
 > `/addRenderAccess`
+
+> `/deleteGithubAccess`
+
+> `/deleteProtonAccess`
+
+> `/deleteRenderAccess`

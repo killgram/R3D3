@@ -68,6 +68,9 @@ app.get("/getAllAccess", authenticateJWT, Accesses.getAllAccess);
 app.post("/addGithubAccess", authenticateJWT, Accesses.addGithubAccess);
 app.post("/addProtonAccess", authenticateJWT, Accesses.addProtonAccess);
 app.post("/addRenderAccess", authenticateJWT, Accesses.addRenderAccess);
+app.post("/deleteGithubAccess", authenticateJWT, Accesses.deleteGithubAccess);
+app.post("/deleteProtonAccess", authenticateJWT, Accesses.deleteProtonAccess);
+app.post("/deleteRenderAccess", authenticateJWT, Accesses.deleteRenderAccess);
 
 // listener
 app.listen(PORT, (): void => {
