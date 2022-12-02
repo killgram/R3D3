@@ -3,7 +3,12 @@ export enum PersonalizeCollectionEnum {
   TABLE = "PERSONALIZE_DOC",
 }
 
+// export enum PersonalizeSkillsCollectionEnum {
+//   COLLECTION = "PERSONALIZE",
+//   TABLE = "SKILLS_DOC",
+// }
+
 export enum PersonalizeSkillsCollectionEnum {
-  COLLECTION = "PERSONALIZE",
-  TABLE = "SKILLS_DOC",
+  COLLECTION = "test",
+  TABLE = "test1",
 }

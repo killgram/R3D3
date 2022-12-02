@@ -54,6 +54,7 @@ app.post("/changePersonalize", authenticateJWT, Personalize.changePersonalize);
 app.get("/getSkills", authenticateJWT, Personalize.getSkills);
 app.post("/addSkills", authenticateJWT, Personalize.addSkills);
 app.post("/updateSkills", authenticateJWT, Personalize.updateSkills);
+app.post("/deleteSkills", authenticateJWT, Personalize.deleteSkills);
 
 // listener
 app.listen(PORT, (): void => {

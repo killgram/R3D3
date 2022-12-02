@@ -1,31 +1,27 @@
 import { client, PersonalizeSkillsCollectionEnum } from "../../configurations";
-import { doc, updateDoc } from "firebase/firestore";
+import { doc, setDoc } from "firebase/firestore";
 import { PersonalizeService } from "../index";
 
-const addSkillsService = async (
-  name: string,
-  link: string,
-  rate: string,
-  importance: number = 0
-) => {
+const deleteSkillsService = async (key: string) => {
+  let newList: any = [];
   const list = await PersonalizeService.getSkillsService();
-  list?.list?.push({
-    name,
-    link,
-    rate,
-    importance,
+  list?.list?.forEach((item: { name: string }) => {
+    if (item.name !== key) {
+      newList.push(item);
+    }
   });
-  await updateDoc(
+  console.log(newList);
+  await setDoc(
     doc(
       client,
       PersonalizeSkillsCollectionEnum.COLLECTION,
       PersonalizeSkillsCollectionEnum.TABLE
     ),
     {
-      list: list?.list,
+      list: newList,
     }
   );
   return true;
 };
 
-export { addSkillsService };
+export { deleteSkillsService };

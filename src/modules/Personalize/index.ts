@@ -5,6 +5,7 @@ import { changePersonalize } from "./ChangePersonalize";
 import { getSkills } from "./GetSkills";
 import { addSkills } from "./AddSkills";
 import { updateSkills } from "./UpdateSkills";
+import { deleteSkills } from "./DeleteSkills";
 
 export {
   getPersonalize,
@@ -14,4 +15,5 @@ export {
   getSkills,
   addSkills,
   updateSkills,
+  deleteSkills,
 };

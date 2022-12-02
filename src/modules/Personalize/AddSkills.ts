@@ -7,14 +7,14 @@ import { PersonalizeService } from "../../services";
  * @param {Response} res
  */
 const addSkills = async (req: Request, res: Response) => {
-  const { name, link, rate } = req.body;
+  const { name, link, rate, importance } = req.body;
   if (!name || !link || !rate) {
     return res.status(200).send({
       title: "query param is missing",
       success: false,
     });
   }
-  await PersonalizeService.addSkillsService(name, link, rate);
+  await PersonalizeService.addSkillsService(name, link, rate, importance);
   res.status(200).send({
     title: `Good`,
     success: true,
