@@ -56,3 +56,8 @@ This service provides the following api:
 
 > `/getAllAccess`
 
+> `/addGithubAccess`
+
+> `/addProtonAccess`
+
+> `/addRenderAccess`

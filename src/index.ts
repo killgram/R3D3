@@ -65,6 +65,9 @@ app.post("/deleteSkills", authenticateJWT, Personalize.deleteSkills);
 
 // accesses
 app.get("/getAllAccess", authenticateJWT, Accesses.getAllAccess);
+app.post("/addGithubAccess", authenticateJWT, Accesses.addGithubAccess);
+app.post("/addProtonAccess", authenticateJWT, Accesses.addProtonAccess);
+app.post("/addRenderAccess", authenticateJWT, Accesses.addRenderAccess);
 
 // listener
 app.listen(PORT, (): void => {
