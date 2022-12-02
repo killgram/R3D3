@@ -5,6 +5,7 @@ import { personalizeExistService } from "./PersonalizeExistService";
 import { changePersonalizeService } from "./ChangePersonalizeService";
 import { getSkillsService } from "./GetSkillsService";
 import { addSkillsService } from "./AddSkillsService";
+import { updateSkillsService } from "./UpdateSkillsService";
 
 export {
   getPersonalizeService,
@@ -14,4 +15,5 @@ export {
   changePersonalizeService,
   getSkillsService,
   addSkillsService,
+  updateSkillsService,
 };

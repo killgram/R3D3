@@ -48,4 +48,4 @@ This service provides the following api:
 
 > `/addSkills`
 
-
+> `/updateSkills`
