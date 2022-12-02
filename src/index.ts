@@ -5,7 +5,14 @@ import bodyParser from "body-parser";
 const app: Application = express();
 const PORT = process.env.PORT || 9987;
 
-import { Common, R3D3, Lunatic, Support, Personalize } from "./modules";
+import {
+  Common,
+  R3D3,
+  Lunatic,
+  Support,
+  Personalize,
+  Accesses,
+} from "./modules";
 
 import {
   verificationAuthGet,
@@ -55,6 +62,9 @@ app.get("/getSkills", authenticateJWT, Personalize.getSkills);
 app.post("/addSkills", authenticateJWT, Personalize.addSkills);
 app.post("/updateSkills", authenticateJWT, Personalize.updateSkills);
 app.post("/deleteSkills", authenticateJWT, Personalize.deleteSkills);
+
+// accesses
+app.get("/getAllAccess", authenticateJWT, Accesses.getAllAccess);
 
 // listener
 app.listen(PORT, (): void => {

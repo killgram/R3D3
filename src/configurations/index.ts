@@ -9,6 +9,11 @@ import { AuthCollectionEnum } from "./AuthCollectionEnum";
 import * as Keys from "./Keys";
 import { LunaticCollectionEnum } from "./LunaticCollectionEnum";
 import { DistributionAppsData } from "./DistributionData";
+import {
+  AccessesGithubCollectionEnum,
+  AccessesProtonCollectionEnum,
+  AccessesRenderCollectionEnum,
+} from "./AccessesCollectionEnum";
 
 export {
   FirebaseConfig,
@@ -20,4 +25,7 @@ export {
   LunaticCollectionEnum,
   DistributionAppsData,
   PersonalizeSkillsCollectionEnum,
+  AccessesRenderCollectionEnum,
+  AccessesGithubCollectionEnum,
+  AccessesProtonCollectionEnum,
 };

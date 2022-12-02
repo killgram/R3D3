@@ -51,3 +51,8 @@ This service provides the following api:
 > `/updateSkills`
 
 > `/deleteSkills`
+
+#### Accesses
+
+> `/getAllAccess`
+
