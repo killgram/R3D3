@@ -1,5 +1,7 @@
 # R3D3
 
+_Personal service that provides data for the admin panel. Personal use_
+
 This service provides the following api:
 
 #### Common
