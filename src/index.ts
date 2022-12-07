@@ -50,16 +50,11 @@ app.post("/lunatic/addLinkLunatic", authenticateJWT, Lunatic.addLink);
 app.post("/lunatic/deleteLinkLunatic", authenticateJWT, Lunatic.deleteLink);
 
 // support
-app.get("/support/getDataSupport", authenticateJWT, Support.getSupport);
 app.post("/support/addDataSupport", authenticateJWT, Support.addSupport);
 app.post("/support/deleteDataSupport", authenticateJWT, Support.deleteSupport);
 
 // personalize
-app.get(
-  "/personalize/getPersonalize",
-  authenticateJWT,
-  Personalize.getPersonalize
-);
+app.get("/personalize/getPersonalize", Personalize.getPersonalize);
 app.post(
   "/personalize/addPersonalize",
   authenticateJWT,
@@ -75,7 +70,7 @@ app.post(
   authenticateJWT,
   Personalize.changePersonalize
 );
-app.get("/personalize/getSkills", authenticateJWT, Personalize.getSkills);
+app.get("/personalize/getSkills", Personalize.getSkills);
 app.post("/personalize/addSkills", authenticateJWT, Personalize.addSkills);
 app.post(
   "/personalize/updateSkills",

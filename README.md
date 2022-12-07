@@ -30,8 +30,6 @@ This service provides the following api:
 
 #### Support
 
-> `/support/getDataSupport`
-
 > `/support/addDataSupport`
 
 > `/support/deleteDataSupport`
