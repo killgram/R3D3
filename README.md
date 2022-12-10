@@ -58,6 +58,7 @@ This service provides the following api:
 
 > `/access/addNewProject`
 
+> `/access/deleteProject`
 
 
 #### Resume
