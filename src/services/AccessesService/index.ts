@@ -3,6 +3,7 @@ import { addNewProjectService } from "./AddNewProjectService";
 import { isExistProjectService } from "./IsExistProjectService";
 import { deleteProjectService } from "./DeleteProjectService";
 import { addFieldService } from "./AddFieldService";
+import { deleteFieldService } from "./DeleteFieldService";
 
 export {
   getAccessProjectsService,
@@ -10,4 +11,5 @@ export {
   isExistProjectService,
   deleteProjectService,
   addFieldService,
+  deleteFieldService,
 };

@@ -62,6 +62,9 @@ This service provides the following api:
 
 > `/access/addField`
 
+> `/access/deleteField`
+
+
 #### Resume
 
 > `/resume/getTotalCount`
