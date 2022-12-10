@@ -91,6 +91,7 @@ app.get(
 );
 app.post("/access/addNewProject", authenticateJWT, Accesses.addNewProject);
 app.post("/access/deleteProject", authenticateJWT, Accesses.deleteProject);
+app.post("/access/addField", authenticateJWT, Accesses.addField);
 
 // resume
 app.get("/resume/getTotalCount", authenticateJWT, Resume.getTotalCount);

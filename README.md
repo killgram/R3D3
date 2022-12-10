@@ -60,6 +60,7 @@ This service provides the following api:
 
 > `/access/deleteProject`
 
+> `/access/addField`
 
 #### Resume
 
