@@ -54,19 +54,9 @@ This service provides the following api:
 
 #### Accesses
 
-> `/access/getAllAccess`
+> `/access/getAccessProjects`
 
-> `/access/addGithubAccess`
 
-> `/access/addProtonAccess`
-
-> `/access/addRenderAccess`
-
-> `/access/deleteGithubAccess`
-
-> `/access/deleteProtonAccess`
-
-> `/access/deleteRenderAccess`
 
 #### Resume
 

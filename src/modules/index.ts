@@ -6,4 +6,4 @@ import * as Personalize from "./Personalize";
 import * as Accesses from "./Accesses";
 import * as Resume from "./Resume";
 
-export { Common, R3D3, Lunatic, Support, Personalize, Accesses, Resume };
+export { Common, R3D3, Lunatic, Support, Personalize, Resume, Accesses };

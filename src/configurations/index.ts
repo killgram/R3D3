@@ -9,11 +9,7 @@ import { AuthCollectionEnum } from "./AuthCollectionEnum";
 import * as Keys from "./Keys";
 import { LunaticCollectionEnum } from "./LunaticCollectionEnum";
 import { DistributionAppsData } from "./DistributionData";
-import {
-  AccessesGithubCollectionEnum,
-  AccessesProtonCollectionEnum,
-  AccessesRenderCollectionEnum,
-} from "./AccessesCollectionEnum";
+import { AccessesCollectionEnum } from "./AccessesCollectionEnum";
 import { dbResumeConfig } from "./dbResumeConfig";
 import { resumeClient } from "./dbResumeClient";
 import {
@@ -31,11 +27,9 @@ export {
   LunaticCollectionEnum,
   DistributionAppsData,
   PersonalizeSkillsCollectionEnum,
-  AccessesRenderCollectionEnum,
-  AccessesGithubCollectionEnum,
-  AccessesProtonCollectionEnum,
   dbResumeConfig,
   resumeClient,
   ResumeUsersCollectionEnum,
   ResumeTotalCountCollectionEnum,
+  AccessesCollectionEnum,
 };

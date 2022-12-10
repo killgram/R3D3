@@ -1,17 +1,3 @@
-import { getAllAccess } from "./GetAllAccess";
-import { addGithubAccess } from "./AddGithubAccess";
-import { addProtonAccess } from "./AddProtonAccess";
-import { addRenderAccess } from "./AddRenderAccess";
-import { deleteGithubAccess } from "./DeleteGithubAccess";
-import { deleteProtonAccess } from "./DeleteProtonAccess";
-import { deleteRenderAccess } from "./DeleteRenderAccess";
+import { getAccessProjects } from "./GetAccessProjects";
 
-export {
-  getAllAccess,
-  addGithubAccess,
-  addProtonAccess,
-  addRenderAccess,
-  deleteGithubAccess,
-  deleteProtonAccess,
-  deleteRenderAccess,
-};
+export { getAccessProjects };

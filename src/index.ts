@@ -84,24 +84,10 @@ app.post(
 );
 
 // accesses
-app.get("/access/getAllAccess", authenticateJWT, Accesses.getAllAccess);
-app.post("/access/addGithubAccess", authenticateJWT, Accesses.addGithubAccess);
-app.post("/access/addProtonAccess", authenticateJWT, Accesses.addProtonAccess);
-app.post("/access/addRenderAccess", authenticateJWT, Accesses.addRenderAccess);
-app.post(
-  "/access/deleteGithubAccess",
+app.get(
+  "/access/getAccessProjects",
   authenticateJWT,
-  Accesses.deleteGithubAccess
-);
-app.post(
-  "/access/deleteProtonAccess",
-  authenticateJWT,
-  Accesses.deleteProtonAccess
-);
-app.post(
-  "/access/deleteRenderAccess",
-  authenticateJWT,
-  Accesses.deleteRenderAccess
+  Accesses.getAccessProjects
 );
 
 // resume
