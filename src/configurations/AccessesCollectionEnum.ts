@@ -1,3 +1,3 @@
 export enum AccessesCollectionEnum {
-  COLLECTION = "ACC",
+  COLLECTION = "ACCESSES",
 }
