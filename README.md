@@ -56,6 +56,8 @@ This service provides the following api:
 
 > `/access/getAccessProjects`
 
+> `/access/addNewProject`
+
 
 
 #### Resume

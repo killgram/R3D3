@@ -89,6 +89,7 @@ app.get(
   authenticateJWT,
   Accesses.getAccessProjects
 );
+app.post("/access/addNewProject", authenticateJWT, Accesses.addNewProject);
 
 // resume
 app.get("/resume/getTotalCount", authenticateJWT, Resume.getTotalCount);

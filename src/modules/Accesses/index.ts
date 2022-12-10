@@ -1,3 +1,4 @@
 import { getAccessProjects } from "./GetAccessProjects";
+import { addNewProject } from "./AddNewProject";
 
-export { getAccessProjects };
+export { getAccessProjects, addNewProject };
