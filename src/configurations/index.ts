@@ -12,10 +12,7 @@ import { DistributionAppsData } from "./DistributionData";
 import { AccessesCollectionEnum } from "./AccessesCollectionEnum";
 import { dbResumeConfig } from "./dbResumeConfig";
 import { resumeClient } from "./dbResumeClient";
-import {
-  ResumeCollectionEnum,
-  ResumeTotalCountCollectionEnum,
-} from "./ResumeCollectionEnum";
+import { ResumeCollectionEnum } from "./ResumeCollectionEnum";
 
 export {
   FirebaseConfig,
@@ -30,6 +27,5 @@ export {
   dbResumeConfig,
   resumeClient,
   ResumeCollectionEnum,
-  ResumeTotalCountCollectionEnum,
   AccessesCollectionEnum,
 };

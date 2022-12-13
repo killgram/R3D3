@@ -7,7 +7,9 @@ import { ResumeService } from "../../services";
  * @param {Response} res
  */
 const getTotalCount = async (req: Request, res: Response) => {
-  const data = await ResumeService.getTotalCountService();
+  const { year } = req.query;
+
+  const data = await ResumeService.getTotalCountService(Number(year));
   res.status(200).send(data);
 };
 
