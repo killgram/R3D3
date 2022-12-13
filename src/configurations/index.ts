@@ -13,7 +13,7 @@ import { AccessesCollectionEnum } from "./AccessesCollectionEnum";
 import { dbResumeConfig } from "./dbResumeConfig";
 import { resumeClient } from "./dbResumeClient";
 import {
-  ResumeUsersCollectionEnum,
+  ResumeCollectionEnum,
   ResumeTotalCountCollectionEnum,
 } from "./ResumeCollectionEnum";
 
@@ -29,7 +29,7 @@ export {
   PersonalizeSkillsCollectionEnum,
   dbResumeConfig,
   resumeClient,
-  ResumeUsersCollectionEnum,
+  ResumeCollectionEnum,
   ResumeTotalCountCollectionEnum,
   AccessesCollectionEnum,
 };

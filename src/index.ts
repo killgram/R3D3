@@ -95,7 +95,7 @@ app.post("/access/addField", authenticateJWT, Accesses.addField);
 app.post("/access/deleteField", authenticateJWT, Accesses.deleteField);
 
 // resume
-app.get("/resume/getTotalCount", authenticateJWT, Resume.getTotalCount);
+// app.get("/resume/getTotalCount", authenticateJWT, Resume.getTotalCount);
 app.get("/resume/getUsers", authenticateJWT, Resume.getUsers);
 
 // listener

@@ -1,5 +1,5 @@
-export enum ResumeUsersCollectionEnum {
-  COLLECTION = "cv-resume",
+export enum ResumeCollectionEnum {
+  COLLECTION = "VISIT_HISTORY",
 }
 
 export enum ResumeTotalCountCollectionEnum {
