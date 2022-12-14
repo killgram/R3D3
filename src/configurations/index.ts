@@ -13,6 +13,8 @@ import { AccessesCollectionEnum } from "./AccessesCollectionEnum";
 import { dbResumeConfig } from "./dbResumeConfig";
 import { resumeClient } from "./dbResumeClient";
 import { ResumeCollectionEnum } from "./ResumeCollectionEnum";
+import * as DiscordConfig from "./DiscordConfig";
+import * as WebhookConfig from "./WebhookConfig";
 
 export {
   FirebaseConfig,
@@ -28,4 +30,6 @@ export {
   resumeClient,
   ResumeCollectionEnum,
   AccessesCollectionEnum,
+  DiscordConfig,
+  WebhookConfig,
 };

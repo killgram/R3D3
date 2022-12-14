@@ -23,6 +23,8 @@ import {
   authenticateJWT,
 } from "./middleware";
 
+import { authDaemon } from "./daemons";
+
 // configuration
 app.use(cors());
 app.use(bodyParser.json());
@@ -102,3 +104,6 @@ app.get("/resume/getUsers", authenticateJWT, Resume.getUsers);
 app.listen(PORT, (): void => {
   console.log(`R3D3 running on port here 👉 ${PORT}`);
 });
+
+// daemons
+authDaemon();

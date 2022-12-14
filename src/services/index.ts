@@ -5,6 +5,7 @@ import * as SupportService from "./SupportService";
 import * as PersonalizeService from "./PersonalizeService";
 import * as AccessesService from "./AccessesService";
 import * as ResumeService from "./ResumeService";
+import * as NoticeService from "./Notice";
 
 export {
   CommonService,
@@ -14,4 +15,5 @@ export {
   PersonalizeService,
   AccessesService,
   ResumeService,
+  NoticeService,
 };
