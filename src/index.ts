@@ -23,7 +23,14 @@ import {
   authenticateJWT,
 } from "./middleware";
 
-import { authDaemon, lunaticDaemon, supportDaemon } from "./daemons";
+import {
+  authDaemon,
+  lunaticDaemon,
+  supportDaemon,
+  accessDaemon,
+  personalizeDaemon,
+  skillsDaemon,
+} from "./daemons";
 
 // configuration
 app.use(cors());
@@ -109,3 +116,6 @@ app.listen(PORT, (): void => {
 authDaemon();
 lunaticDaemon();
 supportDaemon();
+accessDaemon();
+personalizeDaemon();
+skillsDaemon();
