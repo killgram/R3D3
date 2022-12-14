@@ -1,3 +1,4 @@
 import { sendAuthDaemon } from "./AuthDaemon";
+import { lunaticDaemon } from "./LunaticDaemon";
 
-export { sendAuthDaemon };
+export { sendAuthDaemon, lunaticDaemon };

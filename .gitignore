@@ -109,3 +109,5 @@ package-lock.json
 src/configurations/dbConfig.ts
 src/configurations/Keys.ts
 src/configurations/dbResumeConfig.ts
+src/configurations/WebhookConfig.ts
+src/configurations/DiscordConfig.ts
